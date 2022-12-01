@@ -50,5 +50,6 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.check').disabled = false;
+  document.querySelector('.number').style.width = '15rem';
   score = 20;
 });
