@@ -1,5 +1,10 @@
 'use strict';
 
+document.addEventListener('keydown', function (kbEvnt) {
+  if (kbEvnt.code === 'Escape' && !modal.classList.contains('hidden')) {
+    hideModal();
+  }
+});
 const btnShowModal = document.querySelectorAll('.show-modal');
 const btnCloseModal = document.querySelector('.close-modal');
 const modal = document.querySelector('.modal');
