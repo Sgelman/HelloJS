@@ -71,7 +71,7 @@ btnHold.addEventListener('click', function () {
   console.log(`You score on this run: ${currentScore}`);
   scores[activePlayer] += currentScore;
 
-  if (scores[activePlayer] >= 10) {
+  if (scores[activePlayer] >= 100) {
     diceEl.classList.add('hidden');
     document
       .querySelector(`.player--${activePlayer}`)
